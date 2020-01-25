@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CoreComponent } from './core/core.component';
+import { OperatorsComponent } from './core/core.component';
+import { Routes, RouterModule } from '@angular/router';
 
-
+const operatorsRoutes: Routes = [
+  { path: '', component: OperatorsComponent }
+]
 
 @NgModule({
-  declarations: [CoreComponent],
+  declarations: [OperatorsComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild(operatorsRoutes)
   ]
 })
 export class OperatorsModule { }

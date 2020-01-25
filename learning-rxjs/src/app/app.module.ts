@@ -8,10 +8,12 @@ import { ConceptsModule } from './concepts/concepts.module';
 import { OperatorsModule } from './operators/operators.module';
 import { RecipesModule } from './recipes/recipes.module';
 import { SubjectsModule } from './subjects/subjects.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
