@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.primary-background {
+    background-color: #282828;
+}
+
+.primary-text {
+    color: #f0f0f0;
+}
+
+.primary-button {
+    background-color: #a400ff;
+}
+
+.primary-button-text {
+    color: #ffffff;
+}
+
+.primary-button-text:hover {
+    color: #ffffff;
+}
