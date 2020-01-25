@@ -1,1 +1,25 @@
-<p>core works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="banner text-center secondary-background">
+                <h4>Operators Section</h4>
+            </div>
+            <table class="table table-bordered table-dark">
+                <tbody>
+                    <tr *ngFor="let operator of operators; index as i">
+                        <th scope="row">{{ i + 1 }}</th>
+                        <td>{{ operator.section }}</td>
+                        <td>
+                            <a [routerLink]='[operator.link]'>
+                                <button type="button"
+                                    class="btn primary-button primary-button-text">Launch</button>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-10">
+        </div>
+    </div>
+</div>
